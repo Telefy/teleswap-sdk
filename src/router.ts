@@ -36,11 +36,11 @@ export interface TradeOptionsDeadline extends Omit<TradeOptions, 'ttl'> {
 }
 
 /**
- * The parameters to use in the call to the Uniswap V2 Router to execute a trade.
+ * The parameters to use in the call to the Telefy LP Router to execute a trade.
  */
 export interface SwapParameters {
   /**
-   * The method to call on the Uniswap V2 Router.
+   * The method to call on the Telefy LP Router.
    */
   methodName: string
   /**
@@ -60,13 +60,13 @@ function toHex(currencyAmount: CurrencyAmount<Currency>) {
 const ZERO_HEX = '0x0'
 
 /**
- * Represents the Uniswap V2 Router, and has static methods for helping execute trades.
+ * Represents the Telefy LP Router, and has static methods for helping execute trades.
  */
 export abstract class Router {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
   /**
    * Produces the on-chain method name to call and the hex encoded parameters to pass as arguments for a given trade.
    * @param trade to produce call parameters for
