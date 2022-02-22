@@ -1,3 +1,3 @@
 # Teleswap SDK
 
-For more information, contact https://mazelon.com
+For more information, contact https://telefy.finance/
