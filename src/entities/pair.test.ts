@@ -1,4 +1,4 @@
-import { Token, WETH9, Price, CurrencyAmount } from '@uniswap/sdk-core'
+import { Token, WETH9, Price, CurrencyAmount } from '@telefy/teleswap-core-sdk'
 import { InsufficientInputAmountError } from '../errors'
 import { computePairAddress, Pair } from './pair'
 

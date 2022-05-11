@@ -8,7 +8,7 @@ import {
   Price,
   sortedInsert,
   TradeType
-} from '@uniswap/sdk-core'
+} from '@telefy/teleswap-core-sdk'
 import { ONE, ZERO } from '../constants'
 import invariant from 'tiny-invariant'
 
@@ -250,7 +250,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
       let amountOut: CurrencyAmount<Token>
       try {
         ;[amountOut] = pair.getOutputAmount(amountIn)
-      } catch (error) {
+      } catch (error: any) {
         // input too low
         if (error.isInsufficientInputAmountError) {
           continue
@@ -344,7 +344,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
       let amountIn: CurrencyAmount<Token>
       try {
         ;[amountIn] = pair.getInputAmount(amountOut)
-      } catch (error) {
+      } catch (error: any) {
         // not enough liquidity in this pair
         if (error.isInsufficientReservesError) {
           continue

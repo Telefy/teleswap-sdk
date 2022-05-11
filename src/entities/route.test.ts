@@ -1,4 +1,4 @@
-import { Ether, Token, WETH9, CurrencyAmount } from '@uniswap/sdk-core'
+import { Ether, Token, WETH9, CurrencyAmount } from '@telefy/teleswap-core-sdk'
 import { Pair, Route } from './index'
 
 describe('Route', () => {

@@ -1,7 +1,7 @@
 {
   "name": "@mazelon/teleswap-sdk",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "🛠 An SDK for building applications on top of Teleswap",
   "author": "Mazelon Technologies",
   "main": "dist/index.js",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@ethersproject/address": "^5.0.0",
     "@ethersproject/solidity": "^5.0.0",
-    "@uniswap/sdk-core": "^3.0.0-alpha.3",
+    "@telefy/teleswap-core-sdk": "^1.0.7",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3"
   },
