@@ -1,7 +1,7 @@
 {
   "name": "@mazelon/teleswap-sdk",
   "license": "MIT",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "🛠 An SDK for building applications on top of Teleswap",
   "author": "Mazelon Technologies",
   "main": "dist/index.js",
